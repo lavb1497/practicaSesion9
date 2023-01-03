@@ -1,0 +1,24 @@
+<div class="container mt-4 mb-4">
+  <div class="row">
+    <div class="col col-4 d-grid gap-2 mx-auto">
+      <div>
+        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched" [(ngModel)]="check" (ngModelChange)="cambioCheck()">
+        <label class="form-check-label stretched-link" for="firstCheckboxStretched">{{checkText}}</label>
+      </div>
+      <div *ngIf="mostrarMensaje">
+        <p>Activa el checkbox para mostrar el contenido.</p>
+      </div>
+      <div *ngIf="mostrarCard">
+        <div class="card" style="width: 18rem;">
+          <div class="imagen">
+            <img src="../../../assets/dist/img/angular.png" class="card-img-top" alt="Logo Angular" id="imgAngular">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Angular</h5>
+            <p class="card-text">Angular es un framework para aplicaciones web desarrollado en TypeScript, de código abierto, mantenido por Google, que se utiliza para crear y mantener aplicaciones web de una sola página.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
